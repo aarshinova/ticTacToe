@@ -1,0 +1,15 @@
+<div align="center">
+<h1>Tic Tac Toe</h1>
+<h4>Who is playing : {{player}}</h4>
+<h5>Next player : {{nextPlayer}}</h5>
+<div>
+    <div ng-repeat='row in board'>
+        <button class="cell" ng-repeat='cell in row'
+                ng-click='$ctrl.buttonClick(cell);'
+                ng-disabled='$ctrl.checkDisabled(cell);'>{{cell.value}}</button>
+    </div>
+</div>
+<br>
+<button class="reset" ng-click="$ctrl.reset()">Reset</button>
+</br>
+</div>

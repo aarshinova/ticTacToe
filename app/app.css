@@ -23,3 +23,12 @@
   content: "|";
   padding-right: 0.3em;
 }
+
+.cell {
+  width: 54px;
+  height: 54px;
+}
+
+.board{
+  align : center;
+}
