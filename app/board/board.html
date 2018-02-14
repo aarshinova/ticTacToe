@@ -9,6 +9,7 @@
                 ng-disabled='$ctrl.checkDisabled(cell);'>{{cell.value}}</button>
     </div>
 </div>
+    <h4 ng-show="win">The winner is {{nextPlayer}}</h4>
 <br>
 <button class="reset" ng-click="$ctrl.reset()">Reset</button>
 </br>
